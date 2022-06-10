@@ -1,0 +1,15 @@
+{
+  "name": "adp-calculator",
+  "version": "0.0.1",
+  "description": "A program to calculate all of your calculations in an instant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "lolliellolliate",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}
