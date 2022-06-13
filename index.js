@@ -58,8 +58,8 @@ let trht = values.trht;
 let trvt = values.trvt;
 
 //Weight Breakage
-let engineWt = 8282.59;
-let engineCount = 2;
+let engineWt = values.engineWt;
+let engineCount = values.engineCount;
 
 //--------------------------------------------------------------------//
 

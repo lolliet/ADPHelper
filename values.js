@@ -23,29 +23,33 @@ const values = {
     //Takeoff
     takeoffDistance: 2000,
     extraThrust: 17,
-    cdo: 0.01655,
+    cdo: 0.01655, // drag polar co-efficients
     maxAerodynamicEfficiency: 18,
     ostwaldEfficiency: 0.7,
 
     //Wing
-    wingTaperRatio: 0.26,
-    thicknessOfRoot: 15,
-    frontSpar: 12,
-    rearSpar: 60,
+    wingTaperRatio: 0.26, 
+    thicknessOfRoot: 15, // @ certain Percentage of chord length --location
+    frontSpar: 12, // Percentage of chord length
+    rearSpar: 60, // Percentage of chord length
     fuelThickTolerance: 10, //Percentage of Thickness to leave
 
     //Fuselage
-    a: 0.67,
-    C: 0.43,
+    a: 0.67, // constants
+    C: 0.43, // constants
     finenessRatio: 10,
 
     //Horizontal and Vertical Tail
-    cht: 1,
-    cvt: 0.09,
-    arht: 5,
-    arvt: 3,
-    trht: 0.3,
-    trvt: 0.3
+    cht: 1, //chord of horizontal tail
+    cvt: 0.09, // chord of vertical tail
+    arht: 5, // aspect ration of horizontal tail
+    arvt: 3, // aspect ration of vertical tail
+    trht: 0.3, // taper ration of horizontal tail
+    trvt: 0.3, // taper ration of vertical tail
+    
+    //Weight Breakage
+    engineWt: 8282.59,
+    engineCount: 2,
 }
 
 export default values;
