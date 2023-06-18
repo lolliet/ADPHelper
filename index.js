@@ -1,7 +1,3 @@
-/**
- * @returns Rounded Value of Number
- */
-
 function rounder(num) {
     return Number(Number(num).toFixed(3));
 }
@@ -167,223 +163,229 @@ let Wingcg = rounder(0.4 * MAC);
 let XbarWithWing = rounder((summationWL + (wingWt * (XbarWithoutWing + (Wingcg - aerodynamicCentre)))) / (summationW + wingWt));
 
 //-------------------------------------------------------------------------------------------
+log("\n\n---------------------------------\nAircraft Design Project Helper\nMade by lolliet\n---------------------------------\n\n")
 
-log("\n\n---------------------------------\nAircraft Design Project Helper\nMade by lolliellolliate.\n---------------------------------\n\n");
-
-log("Given Paramteres:", 'main');
-log("-----------------------------------");
+log("Given Parameters:", "main")
+log("-----------------------------------")
 log("")
 
-log("Weight Estimation Paramters", "heading");
-log("------------------------------------", "line");
-log("Range (R): " + range + " km");
-log("Specific Fuel Consumption (Ct): " + sfc);
-log("Aerodynamic Efficiency (L/D): " + aerodynamicEfficiency);
-log("Cruise Velocity (Vcruise): " + cruiseVelocity + " km/hr");
+log("Weight Estimation Parameters", "heading")
+log("------------------------------------", "line")
+log("Range (R): " + range + " km")
+log("Specific Fuel Consumption (Ct): " + sfc)
+log("Aerodynamic Efficiency (L/D): " + aerodynamicEfficiency)
+log("Cruise Velocity (Vcruise): " + cruiseVelocity + " km/hr")
 
-log("");
-log("");
+log("")
+log("")
 
-log("Density of Air: " + density);
-log("Clmax of Airfoil: " + clmax);
-log("Wing Area (S): " + wingArea + " m2");
+log("Density of Air: " + density)
+log("Clmax of Airfoil: " + clmax)
+log("Wing Area (S): " + wingArea + " m2")
 
-log("");
-log("");
+log("")
+log("")
 
-log("Empty Weight to Overall Weight Ratio (we/wo): " + emptyWeightRatio);
-log("Payload Weight (Wp): " + wp + " kg");
-log("Crew Weight (Wc): " + wp + " kg");
-log("Specific Gravity of Fuel: " + specificGravity);
+log("Empty Weight to Overall Weight Ratio (we/wo): " + emptyWeightRatio)
+log("Payload Weight (Wp): " + wp + " kg")
+log("Crew Weight (Wc): " + wp + " kg")
+log("Specific Gravity of Fuel: " + specificGravity)
 
-log("");
-log("");
+log("")
+log("")
 
-log("Landing Performance Parameters", "heading");
-log("------------------------------------", "line");
-log("Landing Approach Angle: " + landingApproachAngle + " degrees");
-log("Total Landing DIstance (S): " + landingDistance + " m");
-log("Value of j: " + j);
-log("Value of N: " + N);
+log("Landing Performance Parameters", "heading")
+log("------------------------------------", "line")
+log("Landing Approach Angle: " + landingApproachAngle + " degrees")
+log("Total Landing Distance (S): " + landingDistance + " m")
+log("Value of j: " + j)
+log("Value of N: " + N)
 
-log("");
-log("");
+log("")
+log("")
 
-log("Take-Off Performance Parameters", "heading");
-log("------------------------------------", "line");
-log("Total Take-off Distance (S): " + takeoffDistance + " m");
-log("Extra Thrust Percentage: " + extraThrust );
-log("Value of CDo: " + cdo);
-log("Maximum Aerodynamic Efficiency (L/D)max: " + maxAerodynamicEfficiency);
-log("Ostwald's Efficiecy Factor (e): " + ostwaldEfficiency);
+log("Take-Off Performance Parameters", "heading")
+log("------------------------------------", "line")
+log("Total Take-off Distance (S): " + takeoffDistance + " m")
+log("Extra Thrust Percentage: " + extraThrust)
+log("Value of CDo: " + cdo)
+log("Maximum Aerodynamic Efficiency (L/D)max: " + maxAerodynamicEfficiency)
+log("Oswald's Efficiency Factor (e): " + ostwaldEfficiency)
 
-log("");
-log("");
+log("")
+log("")
 
-log("Wing Configuration Parameters", "heading");
-log("------------------------------------", "line");
-log("WIng's Taper Ratio: " + wingTaperRatio);
-log("Maximum THickness at Root Airfoil: " + thicknessOfRoot);
-log("Front Spar Percentage: " + frontSpar + " %");
-log("Rear Spar Percentage: " + rearSpar + " %");
+log("Wing Configuration Parameters", "heading")
+log("------------------------------------", "line")
+log("Wing's Taper Ratio: " + wingTaperRatio)
+log("Maximum Thickness at Root Airfoil: " + thicknessOfRoot)
+log("Front Spar Percentage: " + frontSpar + " %")
+log("Rear Spar Percentage: " + rearSpar + " %")
 
-log("");
-log("");
+log("")
+log("")
 
-log("Fuselage Configuration Parameters", "heading");
-log("------------------------------------", "line");
-log("Value of a (Fuselage): " + a);
-log("Value of C (Fuselage): " + C);
-log("Fineness Ratio (Lb/Db): " + finenessRatio);
+log("Fuselage Configuration Parameters", "heading")
+log("------------------------------------", "line")
+log("Value of a (Fuselage): " + a)
+log("Value of C (Fuselage): " + C)
+log("Fineness Ratio (Lb/Db): " + finenessRatio)
 
-log("");
-log("");
+log("")
+log("")
 
-log("Emphennage Configuration Parameters", "heading");
-log("------------------------------------", "line");
-log("Horizontal Tail Volume Co-efficient (CHT): " + cht);
-log("Vertical Tail Volume Co-efficient (CVT): " + cvt);
-log("Aspect Ratio of HT: " + arht);
-log("Aspect Ratio of VT: " + arvt);
-log("Taper Ratio of HT: " + trht);
-log("Taper Ratio of VT: " + trvt);
-log("------------------------------------", "line");
+log("Empennage Configuration Parameters", "heading")
+log("------------------------------------", "line")
+log("Horizontal Tail Volume Coefficient (CHT): " + cht)
+log("Vertical Tail Volume Coefficient (CVT): " + cvt)
+log("Aspect Ratio of HT: " + arht)
+log("Aspect Ratio of VT: " + arvt)
+log("Taper Ratio of HT: " + trht)
+log("Taper Ratio of VT: " + trvt)
+log("------------------------------------", "line")
 
-log("");
-log("");
-log("------------------------------------", "line");
-log("Results:", 'main');
-log("------------------------------------", "line");
-log("");
+log("")
+log("")
+log("------------------------------------", "line")
+log("Results:", 'main')
+log("------------------------------------", "line")
+log("")
 
-log("Brequet's Range Equation", "heading");
-log("------------------------------------", "line");
-log("Your Aircraft's W3/W2 ratio is approx: " + cruiseWeightRatio);
-log("Your Aircraft's W5/Wo ratio is " + finalWeightRatio);
-log("Your Aircraft's Wf/Wo ratio is " + fuelWeightRatio);
-log("------------------------------------", "line");
-log("");
+log("Brequet's Range Equation", "heading")
+log("------------------------------------", "line")
+log("Your Aircraft's W3/W2 ratio is approximately: " + cruiseWeightRatio)
+log("Your Aircraft's W5/Wo ratio is " + finalWeightRatio)
+log("Your Aircraft's Wf/Wo ratio is " + fuelWeightRatio)
+log("------------------------------------", "line")
+log("")
 
-log("Weight Estimation", "heading");
-log("------------------------------------", "line");
-log("Aircraft's Overall Weight: " + wo + " kg");
-log("AIrcraft's Empty Weight: " + we + " kg");
-log("Aircraft's Fuel Weight: " + wf + " kg (" + rounder(wf * 1000/specificGravity) + " l)");
-log("Aircraft's Max Wing Loading (W/S): " + wingLoading + " kg/m2");
-log("Fuel Tank Volume in m3: " + volumeOfFuel);
-log("------------------------------------", "line");
-log("");
+log("Weight Estimation", "heading")
+log("------------------------------------", "line")
+log("Aircraft's Overall Weight: " + wo + " kg")
+log("Aircraft's Empty Weight: " + we + " kg")
+log("Aircraft's Fuel Weight: " + wf + " kg (" + rounder(wf * 1000/specificGravity) + " l)")
+log("Aircraft's Max Wing Loading (W/S): " + wingLoading + " kg/m2")
+log("Fuel Tank Volume in m3: " + volumeOfFuel)
+log("------------------------------------", "line")
+log("")
 
-log("Landing Performance", "heading");
-log("------------------------------------", "line");
-log("Stall Velocity (Vstall): " + vstall + " m/s");
-log("Flare Velocity (Vf): " + landingvf + " m/s");
-log("Turn Radius (R): " + landingTurnRadius + " m");
-log("Height of Flare (hf): " + landinghf + " m");
-log("Flare Distance (Sf): " + landingsf + " m");
-log("Approach Distance (Sa): " + landingsa + " m");
-log("Ground Run Distance (Sg): " + landingsg + " m");
-log("Landing Wing Loading (W/S): " + rounder((landingWingLoading / 9.81)) + " kg (" + rounder(landingWingLoading) + " N)");
-log("------------------------------------", "line");
-log("");
+log("Landing Performance", "heading")
+log("------------------------------------", "line")
+log("Stall Velocity (Vstall): " + vstall + " m/s")
+log("Flare Velocity (Vf): " + landingvf + " m/s")
+log("Turn Radius (R): " + landingTurnRadius + " m")
+log("Height of Flare (hf): " + landinghf + " m")
+log("Flare Distance (Sf): " + landingsf + " m")
+log("Approach Distance (Sa): " + landingsa + " m")
+log("Ground Run Distance (Sg): " + landingsg + " m")
+log("Landing Wing Loading (W/S): " + rounder((landingWingLoading / 9.81)) + " kg (" + rounder(landingWingLoading) + " N)")
+log("------------------------------------", "line")
+log("")
 
-log("Take-Off Performance", "heading");
-log("------------------------------------", "line");
-log("Turn Radius (R): " + takeoffTurnRadius + " m");
-log("Approach Angle: " + takeoffApproachAngle + " degrees");
-log("Approach Distance (Sa): " + takeoffsa + " m");
-log("Ground Run Distance (Sg): " + takeoffsg + " m");
-log("Thrust to Weight Ratio (T/W): " + twratio);
-log("Thrust Required (TR): " + thrustRequired + " N (" + rounder(thrustRequired / 1000) + " kN)");
-log("Thrust Available (TA): " + thrustAvailable + " N (" + rounder(thrustAvailable / 1000) + " kN)");
-log("Value of K in Drag Polar Equation: " + K);
-log("Aspect Ratio (AR): " + wingAR);
-log("------------------------------------", "line");
-log("");
+log("Take-Off Performance", "heading")
+log("------------------------------------", "line")
+log("Turn Radius (R): " + takeoffTurnRadius + " m")
+log("Approach Angle: " + takeoffApproachAngle + " degrees")
+log("Approach Distance (Sa): " + takeoffsa + " m")
+log("Ground Run Distance (Sg): " + takeoffsg + " m")
+log("Thrust to Weight Ratio (T/W): " + twratio)
+log("Thrust Required (TR): " + thrustRequired + " N (" + rounder(thrustRequired / 1000) + " kN)")
+log("Thrust Available (TA): " + thrustAvailable + " N (" + rounder(thrustAvailable / 1000) + " kN)")
+log("Value of K in Drag Polar Equation: " + K)
+log("Aspect Ratio (AR): " + wingAR)
+log("------------------------------------", "line")
+log("")
 
-log("Wing Configuration", "heading");
-log("------------------------------------", "line");
-log("Wing Span (b): " + wingSpan + " m");
-log("Root Chord (Cr): " + wingcr + " m");
-log("Tip Chord (Ct): " + wingct + " m");
-log("Mean Aerodynamic Chord (MAC): " + MAC + " m");
-log("Position of MAC: " + positionOfMAC + " m");
-log("Aerodynamic Centre: " + aerodynamicCentre + " m");
-log("Total Volume of Fuel: " + volumeOfFuel + " m3");
-log("Volume of Fuel per Wing: " + rounder((volumeOfFuel / 2.0)) + " m3");
-log("Fuel Tank Configuration Per Wing: " + "Length: " + fuelLength + "m | Breadth: " + fuelBreadth + "m | Thickness: " + fuelThick + "m");
-log("------------------------------------", "line");
-log("");
+log("Wing Configuration", "heading")
+log("------------------------------------", "line")
+log("Wing Span (b): " + wingSpan + " m")
+log("Root Chord (Cr): " + wingcr + " m")
+log("Tip Chord (Ct): " + wingct + " m")
+log("Mean Aerodynamic Chord (MAC): " + MAC + " m")
+log("Position of MAC: " + positionOfMAC + " m")
+log("Aerodynamic Center: " + aerodynamicCentre + " m")
+log("Total Volume of Fuel: " + volumeOfFuel + " m3")
+log("Volume of Fuel per Wing: " + rounder((volumeOfFuel / 2.0)) + " m3")
+log("Fuel Tank Configuration per Wing: " + "Length: " + fuelLength + "m | Breadth: " + fuelBreadth + "m | Thickness: " + fuelThick + "m")
+log("------------------------------------", "line")
+log("")
 
-log("Fuselage Configuration", "heading");
-log("------------------------------------", "line");
-log("Span of Fuselage (Lb): " + Lb + " m");
-log("Diameter of Fuselage (Db): " + Db + " m");
-log("Radius of Fuselage (Rb): " + Rb + " m");
-log("MAximum Cross Sectional Area of Fuselage: " + MCSA + " m");
-log("Fuselage part removed from Wing Span: " + rounder(wingSpan - Db) + " m");
-log("------------------------------------", "line");
+log("Fuselage Configuration", "heading")
+log("------------------------------------", "line")
+log("Span of Fuselage (Lb): " + Lb + " m")
+log("Diameter of Fuselage (Db): " + Db + " m")
+log("Radius of Fuselage (Rb): " + Rb + " m")
+log("Maximum Cross Sectional Area of Fuselage: " + MCSA + " m")
+log("Fuselage part removed from Wing Span: " + rounder(wingSpan - Db) + " m")
+log("------------------------------------", "line")
 
-log("");
+log("")
 
-log("Emphennage Configuration", "heading");
-log("------------------------------------", "line");
-log("Horizontal Tail Configuration", "heading");
-log("------------------------------------", "line");
-log("Length of Horizontal Tail (LVT): " + Lht + " m");
-log("Span of Horizontal Tail (bVT): " + bht + " m");
-log("Area of Horizontal Tail (SVT): " + Sht + " m2");
-log("Root Chord of Horizontal Tail (CrVT): " + crht + " m");
-log("Tip Chord of Horizontal Tail (CtVT): " + ctht + " m");
-log("------------------------------------", "line");
+log("Empennage Configuration", "heading")
+log("------------------------------------", "line")
+log("Horizontal Tail Configuration", "heading")
+log("------------------------------------", "line")
+log("Length of Horizontal Tail (LHT): " + Lht + " m")
+log("Span of Horizontal Tail (bHT): " + bht + " m")
+log("Area of Horizontal Tail (SHT): " + Sht + " m2")
+log("Root Chord of Horizontal Tail (CrHT): " + crht + " m")
+log("Tip Chord of Horizontal Tail (CtHT): " + ctht + " m")
+log("------------------------------------", "line")
 
-log("");
+log("")
 
-log("------------------------------------", "line");
-log("Vertical Tail Configuration", "heading");
-log("------------------------------------", "line");
-log("Length of Vertical Tail (LVT): " + Lvt + " m");
-log("Span of Vertical Tail (bVT): " + bvt + " m");
-log("Area of Vertical Tail (SVT): " + Svt + " m2");
-log("Root Chord of Vertical Tail (CrVT): " + crvt + " m");
-log("Tip Chord of Vertical Tail (CtVT): " + ctvt + " m");
-log("------------------------------------", "line");
-log("");
+log("------------------------------------", "line")
+log("Vertical Tail Configuration", "heading")
+log("------------------------------------", "line")
+log("Length of Vertical Tail (LVT): " + Lvt + " m")
+log("Span of Vertical Tail (bVT): " + bvt + " m")
+log("Area of Vertical Tail (SVT): " + Svt + " m2")
+log("Root Chord of Vertical Tail (CrVT): " + crvt + " m")
+log("Tip Chord of Vertical Tail (CtVT): " + ctvt + " m")
+log("------------------------------------", "line")
+log("")
 
-log("------------------------------------", "line");
-log("Location from Nose:", "heading");
-log("------------------------------------", "line");
-log("Crew + Cockpit Equipments (6%): " + cockpitDis + " m");
-log("Main Landing Gear (12%): " + mlgDis + " m");
-log("Payload Bay 1 (25%): " + paybay1Dis + " m");
-log("Fixed Equipments (37%): " + equipmentsDis + " m");
-log("Fuselage + Main Landing Gear (48%): " + fusAndMlgDis + " m");
-log("Payload Bay 2 (60%): " + paybay2Dis + " m");
-log("Horizontal + Vertical Stabilizers (93%): " + hvstabliziersDis + " m");
+log("------------------------------------", "line")
+log("Location from Nose:", "heading")
+log("------------------------------------", "line")
+log("Crew + Cockpit Equipments (6%): " + cockpitDis + " m")
+log("Main Landing Gear (12%): " + mlgDis + " m")
+log("Payload Bay 1 (25%): " + paybay1Dis + " m")
+log("Fixed Equipments (37%): " + equipmentsDis + " m")
+log("Fuselage + Main Landing Gear (48%): " + fusAndMlgDis + " m")
+log("Payload Bay 2 (60%): " + paybay2Dis + " m")
+log("Horizontal + Vertical Stabilizers (93%): " + hvstabliziersDis + " m")
 
-log("");
+log("")
 
-log("------------------------------------", "line");
-log("Weights of Each Part in (kg):", "heading");
-log("------------------------------------", "line");
-log("Dry Weight: " + dryWt + " kg");
-log("Crew + Cockpit Equipments: " + cockpitWt + " kg");
-log("Main Landing Gear (1%): " + mlgWt + " kg");
-log("Payload Bay 1: " + newEachPaybayWt + " kg");
-log("Fixed Equipments (0.4%): " + equipmentWt + " kg");
-log("Fuselage + Main Landing Gear (30%): " + fusAndMlgWt + " kg");
-log("Payload Bay 2: " + newEachPaybayWt + " kg");
-log("Horizontal + Vertical Stabilizers (3%): " + hvstabliziersWt + " kg");
+log("------------------------------------", "line")
+log("Weights of Each Part in (kg):", "heading")
+log("------------------------------------", "line")
+log("Dry Weight: " + dryWt + " kg")
+log("Crew + Cockpit Equipments: " + cockpitWt + " kg")
+log("Main Landing Gear (1%): " + mlgWt + " kg")
+log("Payload Bay 1: " + newEachPaybayWt + " kg")
+log("Fixed Equipments (0.4%): " + equipmentWt + " kg")
+log("Fuselage + Main Landing Gear (30%): " + fusAndMlgWt + " kg")
+log("Payload Bay 2: " + newEachPaybayWt + " kg")
+log("Horizontal + Vertical Stabilizers (3%): " + hvstabliziersWt + " kg")
 
-log("");
-log("");
+log("")
+log("")
 
-log("------------------------------------", "line");
-log("Centre of Gravity Location:", "heading");
-log("------------------------------------", "line");
-log("Weight of the Wing: " + wingWt + " kg");
-log("Summation W: " + summationW + " kg");
-log("Summation Wl: " + summationWL + " kg");
-log("Centre of Gravity of Wing: " + Wingcg + " m");
-log("Xbar without Wing: " + XbarWithoutWing + " m");
-log("Xbar with Wing: " + XbarWithWing + " m");
+log("------------------------------------", "line")
+log("Center of Gravity Calculation", "heading")
+log("------------------------------------", "line")
+log("CG of Aircraft without Payload (CGw/oP): " + cgWithoutPayload + " m")
+log("CG of Aircraft with Payload (CGwP): " + cgWithPayload + " m")
+log("CG of Each Part:", "heading")
+log("------------------------------------", "line")
+log("Dry Weight: " + dryWtCG + " m")
+log("Crew + Cockpit Equipments: " + cockpitCG + " m")
+log("Main Landing Gear: " + mlgCG + " m")
+log("Payload Bay 1: " + newEachPaybayCG + " m")
+log("Fixed Equipments: " + equipmentCG + " m")
+log("Fuselage + Main Landing Gear: " + fusAndMlgCG + " m")
+log("Payload Bay 2: " + newEachPaybayCG + " m")
+log("Horizontal + Vertical Stabilizers: " + hvstabliziersCG + " m")
+log("------------------------------------", "line")
