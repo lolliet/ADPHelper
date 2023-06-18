@@ -7,4 +7,5 @@ Please note that this program is currently being developed for Aircraft Design P
 
 Important: All values are rounded to three decimal places by default. Exercise caution when using the tool.
 
-Note: ADPHelper is a work in progress and not yet ready for full deployment.
+**Note:** ADPHelper is a work in progress and not yet ready for full deployment.
+**Installation Requirements:** Nodejs v14 | Should work on any platform which can run Nodejs.
